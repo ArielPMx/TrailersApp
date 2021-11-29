@@ -1,22 +1,14 @@
-import React from 'react';
+import {useEffect,React} from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import System from './components/System';
-import Table from './components/Table';
-import Header from './components/Header';
-import Gallery from './components/Gallery';
-
+import { BrowserRouter } from 'react-router-dom';
+import Router from '../src/components/Router'
 
 function App() {
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/system" element={<System />} />
-          <Route path="/" element={<Gallery />} />
-          <Route path="/chars" element={<Table />} />
-        </Routes>
+    <BrowserRouter>
+        <Router/>
       </BrowserRouter>
     </div>
   );

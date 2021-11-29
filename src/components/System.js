@@ -1,5 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
+import Header from '../components/Header'
 
 const System = () => {
   const [name, setName] = React.useState('');
@@ -43,6 +44,7 @@ const System = () => {
 
   return (
     <div className="form">
+            <Header/>
       <h1>Crud Peliculas</h1>
       <form className="input-wrapper">
         <label htmlFor="name">Título:</label>
