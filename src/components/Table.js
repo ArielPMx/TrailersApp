@@ -1,5 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
+import Header from '../components/Header'
 
 const Table = () => {
   const [charList, setCharList] = React.useState([]);
@@ -63,6 +64,7 @@ const Table = () => {
 
   return (
     <div className="char-list">
+            <Header/>
       <h1>Peliculas registradas</h1>
       {charList.map((char, index) => (
         <div className="char" key={index}>
